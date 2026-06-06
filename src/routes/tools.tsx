@@ -20,7 +20,7 @@ function ToolsPage() {
       .map((c) => ({
         ...c,
         tools: c.tools.filter(
-          (t) => t.name.toLowerCase().includes(q) || t.description.toLowerCase().includes(q),
+          (t) => t.name.toLowerCase().includes(q) || (t.description ?? "").toLowerCase().includes(q),
         ),
       }))
       .filter((c) => c.tools.length > 0);
