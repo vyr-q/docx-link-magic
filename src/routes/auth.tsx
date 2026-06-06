@@ -8,9 +8,10 @@ import { GoogleIcon } from "@/components/GoogleIcon";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/auth")({
+  ssr: false,
   head: () => ({
     meta: [
-      { title: "Log in — Welcome back" },
+      { title: "Log in — DocX Network" },
       { name: "description", content: "Log in to your account." },
     ],
   }),
