@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'   // or whatever plugin you're using
+import react from '@vitejs/plugin-react'   // ← Changed to the one you have installed
 
 export default defineConfig({
   plugins: [react()],
-  base: '/docx-link-magic/',     // ← ADD THIS LINE
+  base: '/docx-link-magic/',
 })
