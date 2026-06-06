@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build --legacy-peer-deps",
-    "build:dev": "vite build --mode development --legacy-peer-deps",
+    "build": "npm install --legacy-peer-deps && vite build",
+    "build:dev": "npm install --legacy-peer-deps && vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."
